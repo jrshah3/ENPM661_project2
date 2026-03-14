@@ -9,17 +9,13 @@ import numpy as np
 WIDTH = 180
 HEIGHT = 50
 CLEARANCE = 2
-TEXT_OBSTACLE = "JS5690"  # initials + last 4 UID digits
+TEXT_OBSTACLE = "JS5690"
 DISPLAY_SCALE = 6
 FPS = 30
 VIDEO_NAME = "BW-BFS_Jigar_Shah.mp4"
-
-# To keep the video size reasonable
 EXPLORATION_SKIP = 8
 PATH_FRAME_REPEAT = 4
 FINAL_HOLD_FRAMES = 45
-
-
 
 # COORDINATE HELPERS
 def map_to_image_coords(x: int, y: int) -> tuple[int, int]:
@@ -218,7 +214,6 @@ def get_valid_neighbors(node: tuple[int, int], blocked_mask: np.ndarray):
 
 
 # BACKWARD BFS (Search starts from GOAL and stops when START is dequeued)
-
 def reached_start(current_node: tuple[int, int], start_node: tuple[int, int]) -> bool:
     return current_node == start_node
 
