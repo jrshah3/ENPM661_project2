@@ -14,12 +14,9 @@ TEXT_OBSTACLE = "JS5690"
 DISPLAY_SCALE = 6
 FPS = 30
 VIDEO_NAME = "BW-dijkstra_Jigar_Shah.mp4"
-
-# To keep the video size reasonable
 EXPLORATION_SKIP = 8
 PATH_FRAME_REPEAT = 4
 FINAL_HOLD_FRAMES = 45
-
 
 
 # COORDINATE HELPERS
